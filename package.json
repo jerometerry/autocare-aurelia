@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "gulp test",
-    "e2e": "gulp serve webdriver-standalone e2e"
+    "e2e": "gulp serve webdriver-standalone e2e",
+    "start": "node ./bin/www"
   },
   "devDependencies": {
     "aurelia-bundler": "^0.1.8",
@@ -84,5 +85,11 @@
         "main": "client/shim.min"
       }
     }
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "path": "^0.12.7"
   }
 }
